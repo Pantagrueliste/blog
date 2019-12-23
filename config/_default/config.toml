@@ -16,7 +16,7 @@ baseurl = "https://pantagrueliste.github.io"
 copyright = "&copy; {year}"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = "UA-141652941-1"
+googleAnalytics = "UA-154884249-1"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
