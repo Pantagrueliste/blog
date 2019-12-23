@@ -78,4 +78,4 @@ user_groups:
 ---
 
 Clément Godbarge teaches History and works as a postdoctoral scholar for the [Making & Knowing Project](https://www.makingandknowing.org/) at Columbia University. His research focuses on the relations between science and statecraft in early modern Europe. In his doctoral dissertation, which he defended in 2017 at New York University, he examines how doctors embedded at the courts of sixteenth-century France and Italy promoted themselves as political experts of a new genre. 
-His research has been supported by the Andrew W. Mellon Foundation, the Fulbright Commission and the Renaissance Society of America.
+His research has been supported by the Andrew W. Mellon Foundation, the Fulbright Commission and the Renaissance Society of America. (test)
