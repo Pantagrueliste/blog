@@ -1,69 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pantagrueliste.github.io/</loc>
-    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pantagrueliste.github.io/talk/example/</loc>
+    <loc>https://www.clementgodbarge.com/</loc>
     <lastmod>2019-12-22T20:53:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pantagrueliste.github.io/talk/</loc>
-    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pantagrueliste.github.io/tags/academic/</loc>
-    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pantagrueliste.github.io/getting-started/</loc>
+    <loc>https://www.clementgodbarge.com/talk/example/</loc>
     <lastmod>2019-12-22T20:53:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pantagrueliste.github.io/authors/</loc>
-    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pantagrueliste.github.io/tags/</loc>
-    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://pantagrueliste.github.io/authors/admin/</loc>
+    <loc>https://www.clementgodbarge.com/talk/</loc>
     <lastmod>2019-12-22T20:53:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pantagrueliste.github.io/categories/</loc>
-    <priority>0</priority>
+    <loc>https://www.clementgodbarge.com/authors/admin/</loc>
+    <lastmod>2020-02-07T15:27:41-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pantagrueliste.github.io/post/</loc>
+    <loc>https://www.clementgodbarge.com/tags/academic/</loc>
     <lastmod>2019-12-22T20:53:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pantagrueliste.github.io/publication_types/</loc>
-    <priority>0</priority>
+    <loc>https://www.clementgodbarge.com/getting-started/</loc>
+    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pantagrueliste.github.io/publication/</loc>
+    <loc>https://www.clementgodbarge.com/authors/</loc>
+    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/tags/</loc>
+    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/post/</loc>
+    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/publication_types/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/publication/</loc>
     <lastmod>2019-12-22T20:53:52-05:00</lastmod>
   </url>
   
