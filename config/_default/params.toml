@@ -52,13 +52,13 @@ time_format = "15:04"
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "cag2187@columbia.edu"
 phone = ""
-address = "509b, 420 West 118th Street, New York, NY 10027"
+address = ""
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
-office_hours = """Tuesday 6:00pm to 7:00pm"""
+office_hours = ""
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
-appointment_url = "https://godbarge.youcanbook.me"
+appointment_url = ""
 
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
@@ -85,7 +85,7 @@ contact_links = [
 #   1: Google Maps
 #   2: OpenStreetMap (Mapnik)
 #   3: OpenStreetMap (Mapbox)
-map = 3
+map = 0
 map_api_key = "pk.eyJ1IjoiY2xlbWNsZW0iLCJhIjoiY2lmbGpvbjMwZjh3NnJ5bHg4ZzkzeWZzeCJ9.IgOF4fphVbsWAIKyzAV-DQ"
 latitude = "40.807762"
 longitude = "-73.959565"
