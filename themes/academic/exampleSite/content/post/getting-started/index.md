@@ -1,7 +1,7 @@
 ---
-title: 'Academic: the website builder for Hugo'
-subtitle: 'Create a beautifully simple website in under 10 minutes :rocket:'
-summary: Create a beautifully simple website in under 10 minutes.
+title: 'After the Core'
+subtitle: 'A Few Notes on Columbia's Contemporary Civilization Core Curriculum'
+summary: 
 authors:
 - admin
 tags:
@@ -28,51 +28,22 @@ image:
 projects: []
 
 # Set captions for image gallery.
-gallery_item:
-- album: gallery
-  caption: Default
-  image: theme-default.png
-- album: gallery
-  caption: Ocean
-  image: theme-ocean.png
-- album: gallery
-  caption: Forest
-  image: theme-forest.png
-- album: gallery
-  caption: Dark
-  image: theme-dark.png
-- album: gallery
-  caption: Apogee
-  image: theme-apogee.png
-- album: gallery
-  caption: 1950s
-  image: theme-1950s.png
-- album: gallery
-  caption: Coffee theme with Playfair font
-  image: theme-coffee-playfair.png
-- album: gallery
-  caption: Cupcake
-  image: theme-cupcake.png
 ---
+Often regarded as a cornerstone of Columbia's education, the one-year long Contemporary Civilization course has introduced generations of students with some of the fundamental questions of ethical, political and religious thought that arose in the "West." Spanning from Plato to Patricia Williams, the course is intended to stimulate conversations around ideas and arguments that shaped the political culture of our time.
 
-**Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 _widgets_, _themes_, and _language packs_ included!**
+As a postdoctoral scholar at Columbia, I had the privilege to lead these seminars for two consecutive years, an experience that I will fondly remember—not least because of the edifying conversations sparked in the classroom. The diversity of perspectives and experiences that students bring to class makes it particularly valuable for the instructor.
 
-[Check out the latest **demo**](https://academic-demo.netlify.com/) of what you'll get in less than 10 minutes, or [view the **showcase**](https://sourcethemes.com/academic/#expo) of personal, project, and business sites.
 
-- [**Setup Academic**](#install)
-- [**Get Started**](https://sourcethemes.com/academic/docs/get-started/)
-- [View the documentation](https://sourcethemes.com/academic/docs/)
-- [Ask a question](http://discuss.gohugo.io/)
-- [Request a feature or report a bug](https://github.com/gcushen/hugo-academic/issues)
-- Updating? View the [Update Guide](https://sourcethemes.com/academic/docs/update/) and [Release Notes](https://sourcethemes.com/academic/updates/)
-- Support development of Academic:
-  - [Donate a coffee](https://paypal.me/cushen)
-  - [Become a backer on Patreon](https://www.patreon.com/cushen)
-  - [Decorate your laptop or journal with an Academic sticker](https://www.redbubble.com/people/neutreno/works/34387919-academic)
-  - [Wear the T-shirt](https://academic.threadless.com/)
+critique of CC. 
+bullet point: 
+1. impossible to be perfect. 
+2. it should not be perfect. it should be a bit unsatisfying.
+3. is it too Western? perhaps. But it is also, insufficiently western.
+4. suggestions to teach CC.
+5. Further readings recommended to my students. 
 
-[![Screenshot](https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png)](https://github.com/gcushen/hugo-academic/)
-
+ 
+ Isegoria, i.e. the equality 
 **Key features:**
 
 - **Page builder** - Create *anything* with [**widgets**](https://sourcethemes.com/academic/docs/page-builder/) and [**elements**](https://sourcethemes.com/academic/docs/writing-markdown-latex/)

@@ -21,13 +21,13 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include early modern history, Italian literature and the digital humanities.
 
-interests:
-- Early Modern History
-- Italian Literature
+Interests:
+- Early modern history
+- Italian literature
 - Rhetoric
-- History of Science
-- Political Science
-- Digital Humanities
+- History of medicine and allied sciences
+- Political science
+- Computational history
 
 education:
   courses:
