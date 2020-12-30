@@ -23,7 +23,7 @@ date_format = "Jan 2006"
   company_url = "https://history.columbia.edu/"
   location = "New York City"
   date_start = "2019-01-01"
-  date_end = ""
+  date_end = "2020-06-01"
   description = """Western Contemporary Civilization I & II 
   """
   [[experience]]

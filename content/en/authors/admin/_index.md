@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: Lecturer in History, Postdoctoral scholar
+role: Warbrug/I Tatti Fellow
 
 # Organizations/Affiliations
 organizations:
-- name: Columbia University
-  url: "https://www.columbia.edu"
+- name: Warburg Institute | The Harvard University Center for Italian Renaissance Studies
+  url: "https://itatti.harvard.edu"
 
 
 # Short bio (displayed in user profile at end of posts)
@@ -77,5 +77,4 @@ user_groups:
 - Visitors
 ---
 
-Clément Godbarge teaches History and works as a postdoctoral scholar for the [Making & Knowing Project](https://www.makingandknowing.org/) at Columbia University. His research focuses on the relations between science and statecraft in early modern Europe. In his doctoral dissertation, which he defended in 2017 at New York University, he examines how doctors embedded at the courts of sixteenth-century France, Italy, and Spain, promoted themselves as political experts of a new genre. 
-His research has been supported by the Andrew W. Mellon Foundation, the Fulbright Commission and the Renaissance Society of America.
+Clément Godbarge is a research fellow at the Warburg Institute and at the Harvard University Center for Italian Renaissance Studies in Florence. His research focuses on science and statecraft in early modern Europe. In his forthcoming book, he examines how doctors embedded at the courts of sixteenth-century France and Italy promoted themselves as political experts of a new genre. His research has been supported by the Andrew W. Mellon Foundation, the Fulbright Commission, and the Renaissance Society of America. He also took part in the [Making & Knowing Project](https://www.makingandknowing.org/) at Columbia University.
