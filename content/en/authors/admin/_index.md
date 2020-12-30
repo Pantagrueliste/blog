@@ -10,11 +10,11 @@ authors:
 superuser: true
 
 # Role/position
-role: Warbrug/I Tatti Fellow
+role: Warbrug-I Tatti Fellow
 
 # Organizations/Affiliations
 organizations:
-- name: Warburg Institute | The Harvard University Center for Italian Renaissance Studies
+- name: The Harvard University Center for Italian Renaissance Studies
   url: "https://itatti.harvard.edu"
 
 
