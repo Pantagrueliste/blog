@@ -81,7 +81,7 @@ tagcount = dftags.stack(dropna=False).str.count(r'[^;\s][^\;]*[^;\s]*').unstack(
 tagsrn = tagcount.rename(columns={'al_tl': 'animals', 'bp_tl': 'body parts', 'cn_tl': 'currency', 'df_tl': 'definitions', 'env_tl': 'environment', 'm_tl': 'material', 'md_tl': 'medical', 'ms_tl': 'measurement', 'mu_tl': 'music', 'pa_tl': 'plant', 'pl_tl': 'toponym', 'pn_tl': 'person', 'pro_tl': 'profession', 'sn_tl': 'sensory', 'tl_tl': 'tool', 'tmp_tl': 'temporal', 'wp_tl': 'weapons', 'de_tl': 'German', 'el_tl': 'Greek', 'it_tl': 'Italian', 'la_tl': 'Italian', 'oc_tl': 'Occitan', 'po_tl': 'Poitevin'})
 ```
 
-## Correlate
+# Correlate
 
 Once the dataframe is clean, we can move on to calculate the correlation coefficients between each variables. It's important at this stage to understand your data, and make sure you use the most appropriate correlation method. The package `pandas-profiling` can helpful in the process. 
 
@@ -91,7 +91,7 @@ cortag = tagsrn.phik_matrix()
 ```
 `cortag` is our correlation matrix, we can now try different types of visualization.
 
-## Visualize
+# Visualize
 The first thing we can try is to visualize it as a color-encoded matrix, using the [heatmap module](https://seaborn.pydata.org/generated/seaborn.heatmap.html) from `seaborn`. 
 
 ### Correlation heatmap
