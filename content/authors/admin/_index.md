@@ -10,7 +10,7 @@ role: Warbrug—I Tatti Fellow
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: The Harvard University Center for Italian Renaissance Studies
+- name: Harvard University Center for Italian Renaissance Studies
   url: https://itatti.harvard.edu
 
 # Short bio (displayed in user profile at end of posts)
