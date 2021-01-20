@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BnF Ms. Fr. 640 | Clément Godbarge</title>
+    <link>https://www.clementgodbarge.com/tag/bnf-ms.-fr.-640/</link>
+      <atom:link href="https://www.clementgodbarge.com/tag/bnf-ms.-fr.-640/index.xml" rel="self" type="application/rss+xml" />
+    <description>BnF Ms. Fr. 640</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© Clément Godbarge 2021</copyright><lastBuildDate>Sun, 20 Dec 2020 18:15:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.clementgodbarge.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>BnF Ms. Fr. 640</title>
+      <link>https://www.clementgodbarge.com/tag/bnf-ms.-fr.-640/</link>
+    </image>
+    
+    <item>
+      <title>Visualizing Semantic Markup in BnF Ms. Fr. 640</title>
+      <link>https://www.clementgodbarge.com/post/visualization/</link>
+      <pubDate>Sun, 20 Dec 2020 18:15:00 +0000</pubDate>
+      <guid>https://www.clementgodbarge.com/post/visualization/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;Data-rich scholarly editions such as &lt;a href=&#34;https://edition640.makingandknowing.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Secrets of Craft and Nature in Renaissance France&lt;/em&gt;&lt;/a&gt; contain valuable editorial annotations one can extract, analyze, and visualize for all sorts of scholarly purposes. In this post, I show how to gather these variable in one big correlation matrix. The matrix, I argue, helps us producing a variety of visualizations not only about the text, but also, in this case, about the editors&#39; horizon of expectations.&lt;/p&gt;
+&lt;h1 id=&#34;the-data&#34;&gt;The data&lt;/h1&gt;
+&lt;p&gt;The Making and Knowing Project generates a spreadsheet containing updated information about the manuscript&amp;rsquo;s contents: &lt;code&gt;entry_metadata.csv&lt;/code&gt;. The file can be retrieved from the Making &amp;amp; Knowing &lt;a href=&#34;https://github.com/cu-mkp/m-k-manuscript-data/blob/master/metadata/entry_metadata.csv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;. Alternatively, one can generate a tailored .csv file using Matthew Kumar&amp;rsquo;s excellent &lt;a href=&#34;https://github.com/cu-mkp/manuscript-object&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;manuscript-object&lt;/a&gt;, a Python version of BnF Ms. Fr. 640.&lt;/p&gt;
+&lt;h2 id=&#34;getting-ready&#34;&gt;Getting ready&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# import modules
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import networkx as nx
+# load the edition&#39;s metadata
+df = pd.read_csv(&#39;entry_metadata.csv&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;prepare-the-data&#34;&gt;Prepare the data&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# select the tags you want to correlate
+dftags = df[[&#39;al_tl&#39;, &#39;bp_tl&#39;, &#39;cn_tl&#39;, &#39;def_tl&#39;, &#39;env_tl&#39;, &#39;m_tl&#39;, &#39;md_tl&#39;, &#39;ms_tl&#39;, &#39;mu_tl&#39;, &#39;pa_tl&#39;, &#39;pl_tl&#39;, &#39;pn_tl&#39;, &#39;pro_tl&#39;, &#39;sn_tl&#39;, &#39;tl_tl&#39;, &#39;tmp_tl&#39;, &#39;wp_tl&#39;, &#39;de_tl&#39;, &#39;ge_tl&#39;, &#39;it_tl&#39;, &#39;la_tl&#39;, &#39;oc_tl&#39;, &#39;po_tl&#39;]]
+# count comma separated values
+tagcount = dftags.stack(dropna=False).str.count(r&#39;[^;\s][^\;]*[^;\s]*&#39;).unstack()
+# rename columns
+cortag1 = tagcount.rename(columns={&#39;al_tl&#39;: &#39;animals&#39;, &#39;bp_tl&#39;: &#39;body parts&#39;, &#39;cn_tl&#39;: &#39;currency&#39;, &#39;def_tl&#39;: &#39;definitions&#39;, &#39;env_tl&#39;: &#39;environment&#39;, &#39;m_tl&#39;: &#39;material&#39;, &#39;md_tl&#39;: &#39;medical&#39;, &#39;ms_tl&#39;: &#39;measurement&#39;, &#39;mu_tl&#39;: &#39;music&#39;, &#39;pa_tl&#39;: &#39;plant&#39;, &#39;pl_tl&#39;: &#39;toponym&#39;, &#39;pn_tl&#39;: &#39;person&#39;, &#39;pro_tl&#39;: &#39;profession&#39;, &#39;sn_tl&#39;: &#39;sensory&#39;, &#39;tl_tl&#39;: &#39;tool&#39;, &#39;tmp_tl&#39;: &#39;temporal&#39;, &#39;wp_tl&#39;: &#39;weapons&#39;, &#39;de_tl&#39;: &#39;German&#39;, &#39;ge_tl&#39;: &#39;Greek&#39;, &#39;it_tl&#39;: &#39;Italian&#39;, &#39;la_tl&#39;: &#39;Italian&#39;, &#39;oc_tl&#39;: &#39;Occitan&#39;, &#39;po_tl&#39;: &#39;Poitevin&#39;})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;correlate&#34;&gt;Correlate&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# calculate correlation coefficient
+cortag = cortag1.corr()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;visualize&#34;&gt;Visualize&lt;/h2&gt;
+&lt;h3 id=&#34;correlation-heatmap&#34;&gt;Correlation heatmap&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;f, ax = plt.subplots(figsize=(16, 14))
+ax = sns.heatmap(cortag, linewidths=.03, vmin=0, cmap=&amp;quot;Oranges&amp;quot;, square=True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;heatmap.png&#34; alt=&#34;Correlation Heatmap of BnF Ms. Fr. 640&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;correlation-network&#34;&gt;Correlation network&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;links = cortag.stack().reset_index()
+links.columns = [&#39;var1&#39;, &#39;var2&#39;,&#39;value&#39;]
+# threshold 
+links_filtered = links.loc[(links[&#39;value&#39;] &amp;gt; .3) &amp;amp; (links[&#39;var1&#39;] != links[&#39;var2&#39;])]
+links_filtered
+# create edges
+G = nx.from_pandas_edgelist(links_filtered, &#39;var1&#39;, &#39;var2&#39;)
+# draw network using Kamada &amp;amp; Kawai&#39;s algorithm 
+plt.figure(3,figsize = (12,12)) 
+nx.draw_kamada_kawai(G, with_labels = True, node_color = &#39;red&#39;, node_size = 400, edge_color = &#39;black&#39;, linewidths = 1, font_size = 14)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;graph.png&#34; alt=&#34;Correlation graph of BnF Ms. Fr. 640&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;weighted-network&#34;&gt;Weighted network&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

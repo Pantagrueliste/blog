@@ -4,60 +4,122 @@
   
   <url>
     <loc>https://www.clementgodbarge.com/</loc>
-    <lastmod>2020-12-30T22:57:54+01:00</lastmod>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.clementgodbarge.com/talk/example/</loc>
-    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
+    <loc>https://www.clementgodbarge.com/talk/example-talk/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.clementgodbarge.com/talk/</loc>
-    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
+    <loc>https://www.clementgodbarge.com/event/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.clementgodbarge.com/tags/academic/</loc>
-    <lastmod>2020-06-11T19:15:45-04:00</lastmod>
+    <loc></loc>
+    <lastmod>2021-01-02T20:34:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.clementgodbarge.com/post/cc/</loc>
-    <lastmod>2020-06-11T19:15:45-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.clementgodbarge.com/authors/</loc>
-    <lastmod>2020-12-30T22:57:54+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.clementgodbarge.com/tags/</loc>
-    <lastmod>2020-06-11T19:15:45-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.clementgodbarge.com/authors/admin/</loc>
-    <lastmod>2020-12-30T22:57:54+01:00</lastmod>
+    <loc>https://www.clementgodbarge.com/tag/bnf-ms.-fr.-640/</loc>
+    <lastmod>2021-01-02T20:34:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.clementgodbarge.com/categories/</loc>
+    <lastmod>2021-01-02T20:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2021-01-02T20:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/tag/data-visualization/</loc>
+    <lastmod>2021-01-02T20:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/tag/digital-humanities/</loc>
+    <lastmod>2021-01-02T20:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/category/notes/</loc>
+    <lastmod>2021-01-02T20:34:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.clementgodbarge.com/post/</loc>
-    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
+    <lastmod>2021-01-02T20:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/tags/</loc>
+    <lastmod>2021-01-02T20:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/post/visualization/</loc>
+    <lastmod>2021-01-02T20:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/project/cavrianas-correspondences/</loc>
+    <lastmod>2019-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/tag/making-knowing/</loc>
+    <lastmod>2019-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/project/mk/</loc>
+    <lastmod>2019-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/project/</loc>
+    <lastmod>2019-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/publication-type/1/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clementgodbarge.com/publication/example/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.clementgodbarge.com/publication_types/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.clementgodbarge.com/publication/</loc>
-    <lastmod>2019-12-22T20:53:52-05:00</lastmod>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
