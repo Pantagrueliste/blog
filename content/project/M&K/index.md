@@ -34,7 +34,7 @@ The [Making & Knowing Project](https://www.makingandknowing.org), founded in 201
 
 As a postdoctoral fellow, I took part in the project working, among other things, on the [digital critical edition](https://edition640.makingandknowing.org) of BnF Ms. Fr. 640. This unique 16th-century French manuscript offers first-hand insight into making and materials from a time when artists were scientists.  
 
-The digital edition makes an abundance of data freely available on its [GitHub repository](https://github.com/cu-mkp/m-k-manuscript-data). Over the next year, I intend to post a series of blog posts related to the edition and its data. I will show how easily one can download and analyze this data using Python or R. Stay tuned!
+The digital edition makes an abundance of data freely available on its [GitHub repository](https://github.com/cu-mkp/m-k-manuscript-data). Over the next year, I intend to publish a series of blog posts related to the edition and its data. I will show how easily one can download and analyze this data using Python or R. Stay tuned!
 
 
 
