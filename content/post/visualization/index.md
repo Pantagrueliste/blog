@@ -149,9 +149,9 @@ nx.write_gexf(G, 'graph.gexf')
 You can see the result at the beginning of this post.
 
 
-### Circular weighted network
+### Update: Circular weighted network
 
-I was looking for ways to display correlation matrices as weighted networks, and I found this interesting approach [shared by Julian West](https://julian-west.github.io/blog/visualising-asset-price-correlations/#remove-edges-below-a-threshold), which I am adapting to our dataset.
+I was looking for ways to display correlation matrices as weighted networks, and I found this interesting approach [shared by Julian West](https://julian-west.github.io/blog/visualising-asset-price-correlations/#remove-edges-below-a-threshold), which I am adapting here to our dataset.
 
 ```python
 # create graph weighted by correlation coefficients (unfiltered)
