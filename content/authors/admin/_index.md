@@ -48,7 +48,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:clement.godbarge@fulbrightmail.org'  # For a direct email link, use "mailto:test@example.org".
+  link: ""
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/ClementAG

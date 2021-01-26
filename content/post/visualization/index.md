@@ -127,11 +127,14 @@ In order to do this, we need to change our matrix into a list of edges and nodes
 # transform the data
 links = cortag.stack().reset_index()
 links.columns = ['var1', 'var2','value']
+
 # threshold 
 links_filtered = links.loc[(links['value'] > .6) & (links['var1'] != links['var2'])]
 links_filtered
+
 # create edges
 G = nx.from_pandas_edgelist(links_filtered, 'var1', 'var2')
+
 # draw network using Kamada & Kawai's algorithm 
 plt.figure(3,figsize = (12,12)) 
 nx.draw_kamada_kawai(G, with_labels = True, node_color = 'red', node_size = 400, edge_color = 'black', linewidths = 1, font_size = 14)
@@ -144,3 +147,61 @@ If there are too many edges and nodes, you can still change the threshold to get
 nx.write_gexf(G, 'graph.gexf')
 ``` 
 You can see the result at the beginning of this post.
+
+
+### Circular weighted network
+
+I was looking for ways to display correlation matrices as weighted networks, and I found this interesting approach [shared by Julian West](https://julian-west.github.io/blog/visualising-asset-price-correlations/#remove-edges-below-a-threshold), which I am adapting to our dataset.
+
+```python
+# create graph weighted by correlation coefficients (unfiltered)
+Gx = nx.from_pandas_edgelist(links, 'var1', 'var2', edge_attr=['value'])
+
+# determine a threshold to remove some edges
+threshold = 0.4
+
+# list to store edges to remove
+remove = []
+
+# loop through edges in Gx and find correlations which are below the threshold
+for var1, var2 in Gx.edges():
+    corr = Gx[var1][var2]['value']
+    #add to remove node list if abs(corr) < threshold
+    if abs(corr) < threshold:
+        remove.append((var1, var2))
+
+# remove edges contained in the remove list
+Gx.remove_edges_from(remove)
+
+print(str(len(remove)) + ' edges removed')
+```
+Once we remove a few edges, we can determine their color and thickness.
+
+```python
+# determine the colors of edges
+def assign_colour(correlation):
+    if correlation <= 0.8:
+        return '#ff872c'  # orange
+    else:
+        return '#f11d28'  # red
+
+
+def assign_thickness(correlation, benchmark_thickness=3, scaling_factor=3):
+    return benchmark_thickness * abs(correlation)**scaling_factor
+
+
+def assign_node_size(degree, scaling_factor=50):
+    return degree * scaling_factor
+```
+
+We also give nodes a size proportional to their number of connections. 
+
+```python
+# assign node size depending on number of connections (degree)
+node_size = []
+for key, value in dict(Gx.degree).items():
+    node_size.append(assign_node_size(value))
+```
+The result is a weighted graph that admits more nodes and considerably more edges, while remaining readable and informative. 
+
+![Weighted correlation graph of BnF Ms. Fr. 640](weightedgraph.png) 
