@@ -12,7 +12,7 @@ projects: [Making & Knowing]
 date: "2020-12-20T18:15:00Z"
 
 # Date updated
-lastmod: "2021-01-02T20:34:00Z"
+lastmod: "2021-01-28T20:34:00Z"
 
 # Is this an unpublished draft?
 draft: false
@@ -63,9 +63,9 @@ import networkx as nx
 
 ## Prepare the data
 First, let's download the edition's latest metadata file from their [GitHub repository](https://github.com/cu-mkp/m-k-manuscript-data) in the metadata folder.
-We'll select only the columns we need. For this demonstration, I choose all the semantic tags from the English translation `tl`, but you can tags from the French transcription `tc`, or the normalized version `tcn`. 
+We'll select only the columns we need. For this demonstration, I choose all the semantic tags from the English translation `tl`, but you can also choose tags from the French transcription `tc`, or the normalized version `tcn`. 
 The data comes into semicolon-separated values, and we need Python to count them for us. So we'll use the stack-unstack method to do so with the regular expression `[^;\s][^\;]*[^;\s]*`.
-To make the matrix more accessible, we rename each column, you can skip this step if you're in a rush, but bear in mind that our dataframe, at this stage is named `tagsrn`.
+To make the matrix more accessible, we rename each column. You can skip this step if you're in a rush, just bear in mind that our dataframe, at this stage is named `tagsrn`.
 
 ```python
 # load the edition's metadata
@@ -83,13 +83,13 @@ tagsrn = tagcount.rename(columns={'al_tl': 'animals', 'bp_tl': 'body parts', 'cn
 
 # Correlate
 
-Once the dataframe is clean, we can move on to calculate the correlation coefficients between each variables. It's important at this stage to understand your data, and make sure you use the most appropriate correlation method. The package `pandas-profiling` can helpful in the process. 
+Once the dataframe is clean, we can move on to calculate the correlation coefficients between each variables. It's important at this stage to understand your data, and to make sure you use the most appropriate correlation method. The package `pandas-profiling` is particularly helpful for this task. 
 
 ```python
 # calculate correlation coefficient with the phi k method
 cortag = tagsrn.phik_matrix()
 ```
-`cortag` is our correlation matrix, we can now try different types of visualization.
+`cortag` is our correlation matrix. We can now try different types of visualization.
 
 # Visualize
 The first thing we can try is to visualize it as a color-encoded matrix, using the [heatmap module](https://seaborn.pydata.org/generated/seaborn.heatmap.html) from `seaborn`. 
@@ -103,9 +103,9 @@ ax = sns.heatmap(cortag, linewidths=.03, vmin=0, cmap="Oranges", square=True)
 
 If you know the text well, you can immediately see that the heatmap makes a lot of sense. For example, names are strongly correlated to Latin, as it was customary, especially among 16th-century humanists, to Latinize them.  
 
-The mordant minds among us may argue that this heatmap is merely stating the obvious. They are not entirely wrong, and medical tags certainly look like a case in point, as they predictably correlate with body parts, measurements and plants.
+Some people may argue that this heatmap is merely stating the obvious. They are not entirely wrong, and at first sight, medical tags look like a case in point, as they predictably correlate with body parts, measurements and plants.
 
-Yet if we read the heatmap more carefully, line by line, we may find some interesting correlations. That medical tags, for example, are correlated with Italian and Latin words may give us some clues about the origin of medical recipes in Ms. Fr. 640. Similarly, the correlation between professions, definitions, and measurements, shows us the extent to which professional identity structures 16th-century technical discourses. 
+But if we read the heatmap more carefully, line by line, we may find some interesting and unexpected correlations. That medical tags, for example, are correlated with Italian and Latin words, gives us some clues about the origin of medical recipes in Ms. Fr. 640. Similarly, the correlation between professions, definitions, and measurements, shows the extent to which professional identity structures 16th-century technical discourses. 
 
 ### Correlation Clustermap
 
