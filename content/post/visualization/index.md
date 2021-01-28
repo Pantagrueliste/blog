@@ -116,7 +116,7 @@ clustermap = sns.clustermap(cortag, figsize=(12, 13), dendrogram_ratio=(.1, .2),
 ```
 ![Correlation Clustermap of BnF Ms. Fr. 640](clustermap.png)
 
-The clustermap separates well isolated tags (on the top and left) from those that are more interconnected. We also distinguish isolated clusters, such as music and Poitevin (who would have thought!), from more central ones such as mesaurement, material, definitions and weapons. Professions are more interconnected, but they're not part, at least in this specific correlation matrix, of a particular cluster.
+Besides looking like a pixelated (yes, it's on the OED) insect, the clustermap clearly distinguishes isolated tags (on the top and left) from those that are more interconnected. We also distinguish isolated clusters, such as music and Poitevin (who would have thought!), from more central ones such as mesaurement, material, definitions and weapons. Professions are more interconnected, but they're not part, at least in this specific correlation matrix, of a particular cluster.
 
 ### Correlation network
 
