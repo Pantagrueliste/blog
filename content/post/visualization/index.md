@@ -120,7 +120,7 @@ Besides looking like a pixelated (yes, it's on the OED) insect, the clustermap c
 
 ### Correlation network
 
-If we want to synthesize even more the correlations contained in our matrix, network graphs maybe an elegant solution. This is particularly true in contexts where we want to communicate about the manuscript's contents.  
+If we want to synthesize even more the correlations contained in our matrix, network graphs offer an elegant solution. This is particularly true in contexts where we want to communicate about the manuscript's contents.  
 In order to do this, we need to change our matrix into a list of edges and nodes and define a threshold to eliminate weaker correlations from our graph.
 
 ```python
