@@ -27,14 +27,14 @@ content:
   filter_button:
   - name: All
     tag: '*'
-  - name: Books
-    tag: Books
+  # - name: Books
+  #  tag: Books
   # - name: Science & Rhetoric
   #  tag: Science & Rhetoric
   - name: Digital Humanities
     tag: Digital Humanities
-  - name: Other
-    tag: Other
+  # - name: Other
+  #   tag: Other
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
