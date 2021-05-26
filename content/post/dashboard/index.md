@@ -41,6 +41,7 @@ categories:
 ---
 
 # Overview 
+Archives can be dauntingly messy. The *Mediceo del Principato* at the State Archives of Florence is a case in point. It is only partially inventoried, and some of its documents are scattered for no apparent reason. Perhaps even worse, the archives do not let you look at more than 4 *filze* (packs of documents) per day. During the Covid-19 pandemic, this maximum number of *filze* is 4 every two weeks. To maximize research efficiency, and increase chances of finding the right documents, it is important to prioritize. 
 
 # The concept
 
