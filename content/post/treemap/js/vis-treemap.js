@@ -208,7 +208,7 @@ class Treemap {
       .selectAll("tspan")
       .data((d) => [
         d === root ? this.path(d) : this.name(d),
-        `${this.format(d.value)} characters`,
+        //`${this.format(d.value)} char.`,
       ])
       .join("tspan")
       .attr("x", 3)
@@ -307,7 +307,7 @@ class Treemap {
       case 0:
         return "manuscript";
       case 1:
-        return `folio ${node.data[0]}`;
+        return `fol. ${node.data[0]}`;
       case 2:
         return `${node.data[0]}`;
       default:
