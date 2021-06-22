@@ -12,7 +12,7 @@ projects: [Filippo Cavriana's Secret Correspondence, 1568—1589.]
 date: "2021-05-24T16:00:00Z"
 
 # Date updated
-lastmod: "2021-01-28T20:34:00Z"
+lastmod: "2021-05-28T20:34:00Z"
 
 # Is this an unpublished draft?
 draft: false

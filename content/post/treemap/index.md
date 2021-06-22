@@ -1,6 +1,6 @@
 ---
-title: The Manuscript Browser
-subtitle: A user-friendly approach to digital publications
+title: A Visual Browser for Archive
+subtitle: A user-friendly approach to digitized archival documents
 
 # Summary for listings and search engines
 summary: O 
@@ -15,7 +15,7 @@ date: "2021-06-20T16:00:00Z"
 lastmod: "2021-06-20T17:00:00Z"
 
 # Is this an unpublished draft?
-draft: true
+draft: false
 
 # Show this page in the Featured widget?
 featured: false
@@ -39,7 +39,17 @@ tags:
 categories:
 - Notes
 ---
-Digital editions suffer from a paradox: while they make complex archival fonds available to a wider public, the loss of sensorial input resulting from their dematerialization tends to disorient and discourage readers. They make the navigation of vast document repositories cumbersome, especially among users affected with cognitive impairments. However, interactive visualizations of archival metadata can provide readers with an alternative sensorial input, making digital scholarly editions more ergonomic, and accessible to a wider and neurodiverse audience.
+# The Problem
+Digital editions suffer from a paradox: while they make complex archival fonds available to a wider public, the loss of sensorial input resulting from their dematerialization tends to disorient and even discourage readers. They make the navigation of vast document repositories cumbersome, a fortiori among users inexperienced with archives, and among those affected with cognitive impairments.
+
+# The Solution
+In that regard, archival metadata enables us to create interactive visual abstractions, providing readers with an alternative sensorial input, and increasing thus both ergonomics and accessibility. This is feasible using, for example, an interactive treemap--or any diagram that efficiently breaks down hierarchical data. 
+
+# The Experiment
+In this case, my first experiment adapts the [Zoomable Treemap code](https://observablehq.com/@d3/zoomable-treemap) for d3.js, adding hyperlinks to it.
+This first experiment places represents the manuscript's folios, and the entries inside each folios. The colors represent the dominating category. More data is available by hovering over each entry, including the hyperlink to the manuscript. 
+In doing so the treemap becomes a sort of visual index, showing readers a very quick overview, not only of the contents but also of the dimensions of each folio and each entry.
+Over the coming months I will experiment with other diagrams and other hierarchies. Stay tuned!
 
   <head>
     <meta charset="UTF-8" />
