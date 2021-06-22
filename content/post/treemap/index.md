@@ -3,7 +3,7 @@ title: A Visual Browser for Archive
 subtitle: A user-friendly approach to digitized archival documents
 
 # Summary for listings and search engines
-summary: O 
+summary: Interactive visualizations provide readers with an alternative sensorial input to navigate complex archival documents.
 
 # Link this post with a project
 projects: [Making & Knowing Project]
