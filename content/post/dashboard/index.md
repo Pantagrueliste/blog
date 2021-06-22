@@ -3,7 +3,7 @@ title: The Archive at a Glance
 subtitle: How interactive data visualizations enhance archival research
 
 # Summary for listings and search engines
-summary: Dashboard web applications increase situational awareness in the archive, ultimately improving the latter's accessibility and researchers' productivity.
+summary: Dashboard web applications increase situational awareness in the archive, ultimately improving the latter's accessibility and researchers' productivity
 
 # Link this post with a project
 projects: [Filippo Cavriana's Secret Correspondence, 1568—1589.]

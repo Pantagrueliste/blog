@@ -1,5 +1,5 @@
 ---
-title: A Visual Browser for Archive
+title: A Visual Browser for the Archive
 subtitle: A user-friendly approach to digitized archival documents
 
 # Summary for listings and search engines
