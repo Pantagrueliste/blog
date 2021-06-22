@@ -46,7 +46,7 @@ Digital editions suffer from a paradox: while they make complex archival fonds a
 This is where archival metadata can help us. Indeed, these data enable us to create interactive visual abstractions which provide readers with an alternative sensorial input, increase thus both ergonomics and accessibility. To make the archive visually navigable, a treemap, or any diagram that efficiently breaks down hierarchical data can do the trick. 
 
 # The Experiment
-My first experiment adapts the [Zoomable Treemap code](https://observablehq.com/@d3/zoomable-treemap) for d3.js, adding hyperlinks to it.
+My first experiment adapts the [Zoomable Treemap code](https://observablehq.com/@d3/zoomable-treemap) for `D3.js`, adding hyperlinks to it.
 This first experiment represents the manuscript BnF Ms Fr 640, its folios, and the entries inside each folio. The colors represent the dominating category. More data is available by hovering over each entry, including the hyperlink to the manuscript. 
 In doing so, the treemap becomes an interactive visual index, showing readers a very quick and responsive overview, not only of the manuscript's contents but also of the dimensions of each folio and each entry.
 Over the coming months I will continue experimenting with this idea trying other diagrams and other hierarchies... Stay tuned!
