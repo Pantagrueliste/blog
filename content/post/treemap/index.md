@@ -40,7 +40,7 @@ categories:
 - Notes
 ---
 # The Problem
-Digital editions suffer from a paradox: while they make complex archival fonds available to a wider public, the loss of sensorial input resulting from their dematerialization tends to disorient and even discourage readers. They make the navigation of vast document repositories rather cumbersome and intimidating. This is not only true for users inexperienced with archival research, but also among readers affected with cognitive impairments.
+Digital editions suffer from a paradox: while they make recondite documents available to a wider public, the loss of sensorial input resulting from their dematerialization tends to disorient and even discourage readers from engaging with its contents. They make the navigation of vast document repositories rather cumbersome and intimidating. This is not only true for users inexperienced with archival research, but also among readers affected with cognitive impairments.
 
 # The Solution
 This is where archival metadata can help us. Indeed, these data enable us to create interactive visual abstractions which provide readers with an alternative sensorial input, increase thus both ergonomics and accessibility. To make the archive visually navigable, a treemap, or any diagram that efficiently breaks down hierarchical data can do the trick. 
