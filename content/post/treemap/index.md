@@ -40,16 +40,16 @@ categories:
 - Notes
 ---
 # The Problem
-Digital editions suffer from a paradox: while they make complex archival fonds available to a wider public, the loss of sensorial input resulting from their dematerialization tends to disorient and even discourage readers. They make the navigation of vast document repositories cumbersome, a fortiori among users inexperienced with archives, and among those affected with cognitive impairments.
+Digital editions suffer from a paradox: while they make complex archival fonds available to a wider public, the loss of sensorial input resulting from their dematerialization tends to disorient and even discourage readers. They make the navigation of vast document repositories rather cumbersome and intimidating. This is not only true for users inexperienced with archival research, but also among readers affected with cognitive impairments.
 
 # The Solution
-In that regard, archival metadata enables us to create interactive visual abstractions, providing readers with an alternative sensorial input, and increasing thus both ergonomics and accessibility. This is feasible using, for example, an interactive treemap--or any diagram that efficiently breaks down hierarchical data. 
+This is where archival metadata can help us. Indeed, these data enable us to create interactive visual abstractions which provide readers with an alternative sensorial input, increase thus both ergonomics and accessibility. To make the archive visually navigable, a treemap, or any diagram that efficiently breaks down hierarchical data can do the trick. 
 
 # The Experiment
-In this case, my first experiment adapts the [Zoomable Treemap code](https://observablehq.com/@d3/zoomable-treemap) for d3.js, adding hyperlinks to it.
-This first experiment places represents the manuscript's folios, and the entries inside each folios. The colors represent the dominating category. More data is available by hovering over each entry, including the hyperlink to the manuscript. 
-In doing so the treemap becomes a sort of visual index, showing readers a very quick overview, not only of the contents but also of the dimensions of each folio and each entry.
-Over the coming months I will experiment with other diagrams and other hierarchies. Stay tuned!
+My first experiment adapts the [Zoomable Treemap code](https://observablehq.com/@d3/zoomable-treemap) for d3.js, adding hyperlinks to it.
+This first experiment represents the manuscript BnF Ms Fr 640, its folios, and the entries inside each folio. The colors represent the dominating category. More data is available by hovering over each entry, including the hyperlink to the manuscript. 
+In doing so, the treemap becomes an interactive visual index, showing readers a very quick and responsive overview, not only of the manuscript's contents but also of the dimensions of each folio and each entry.
+Over the coming months I will continue experimenting with this idea trying other diagrams and other hierarchies... Stay tuned!
 
   <head>
     <meta charset="UTF-8" />
